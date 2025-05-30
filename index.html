@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title> COLOR_APP_BY_SNEHA</title>
+		<style>
+*{
+	text-align:center;
+}
+		 .btn{
+			
+			width:30%;
+			border-radius:20px;
+
+		height:30px;			}
+		.btn:hover{color:white; 
+				background-color:yellow;}
+		</style>	
+	</head>
+	<body>
+		<h1 style="background-color:black; color:white ">COLOR ME</h1>
+		<form onsubmit= "show(event)">
+		
+			<input type ="submit"  value="RED" class="btn"/>
+			<input type ="submit"  value="GREEN" class="btn"/>
+			<input type ="submit"  value="BLUE" class="btn"/>
+		
+		</form>
+	<script>
+function show(event)
+{
+		
+ event.preventDefault();
+		let action = document.activeElement.value;
+		
+		if(action==="RED")
+		{
+			document.body.style.backgroundColor="red";	
+		}
+		else if (action === "GREEN")
+		{
+			document.body.style.backgroundColor="green"
+		}
+		else if(action === "BLUE")
+		{
+			document.body.style.backgroundColor="blue";
+		}
+		else
+		{
+			document.body.style.backgroundColor="";
+		}
+}
+	</script>
+	</body>
+	
+</html>
